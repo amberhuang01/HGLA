@@ -164,11 +164,25 @@ Results are organized by:
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{your_paper,
-    title={Gradient-Based Pruning for Language Models},
-    author={Your Name},
-    journal={Your Journal},
-    year={2024}
+@inproceedings{huang-etal-2025-less,
+    title = "Less Is More? Examining Fairness in Pruned Large Language Models for Summarising Opinions",
+    author = "Huang, Nannan  and
+      Fayek, Haytham M.  and
+      Zhang, Xiuzhen",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.909/",
+    doi = "10.18653/v1/2025.emnlp-main.909",
+    pages = "18005--18029",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Model compression through post-training pruning offers a way to reduce model size and computational requirements without significantly impacting model performance. However, the effect of pruning on the fairness of LLM-generated summaries remains unexplored, particularly for opinion summarisation where biased outputs could influence public views. In this paper, we present a comprehensive empirical analysis of opinion summarisation, examining three state-of-the-art pruning methods and various calibration sets across three open-source LLMs using four fairness metrics. Our systematic analysis reveals that pruning methods have larger impact on fairness than calibration sets. Building on these insights, we propose High Gradient Low Activation (HGLA) pruning, which identifies and removes parameters that are redundant for input processing but influential in output generation. Our experiments demonstrate that HGLA can better maintain or even improve fairness compared to existing methods, showing promise across models and tasks where traditional methods have limitations. Our human evaluation shows HGLA-generated outputs are fairer than existing state-of-the-art pruning methods."
 }
 ```
 
